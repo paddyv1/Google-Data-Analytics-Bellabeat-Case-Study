@@ -13,3 +13,10 @@ _The case study follows the six steps of data analysis process:_
 ### 🧗‍♀️ [Act](#6-act)
 
 ## Scenario
+
+## 1. Ask
+## 2. Prepare
+## 3. Process
+## 4. Analyze
+## 5. Share
+## 6. Act
