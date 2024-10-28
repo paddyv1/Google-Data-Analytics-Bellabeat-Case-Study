@@ -13,6 +13,7 @@ _The case study follows the six steps of data analysis process:_
 ### 🧗‍♀️ [Act](#6-act)
 
 ## Scenario
+Bellabeat is a high-tech manufacturer of health-focused products for women. Although it is a small company, it is poised to become a significant competitor in the global smart device market. Currently, it has five focus products: the Bellabeat app, Leaf, Time, Spring, and Bellabeat membership. I have been tasked to analyze the smart device data available to gain insight into how consumers are using their smart devices. The insights we discover will then help guide the marketing strategy for the company.
 
 ## 1. Ask
 ## 2. Prepare
