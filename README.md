@@ -76,6 +76,24 @@ The next part of the data I looked into was the total active minutes which were 
 
 It is recommended that at least 150 minutes of moderate or 75 minutes of intense activity be undertaken each week, which corresponds to around 20 minutes of fairly active minutes or 10 minutes of very active minutes.
 
+A noticeable trend in the data I also found was that users tended to have fewer sedentary minutes on a Saturday compared to other days of the week. One reason for this could be that people have more free time at the weekend to partake in recreational exercise compared to midweek when they are working.
+
+![image](https://github.com/user-attachments/assets/0f89fa04-23df-4956-a627-f696ea715dcd)
+
+
+
+
 
 ## 5. Share
+
 ## 6. Act
+From the findings, I conclude:
+- The users of FitBit spend on average around 12 hours a day in sedentary activity levels with 4 hours of lightly active and only around 30 minutes in fairly active.
+- Comparing all the days of the week Saturday tends to be the most active of the seven days whilst Sunday is the least.
+- The Fitbit users who are classified as sedentary take minimal steps and burn around 1500 to 2500 calories, but compared to the active users they would take more steps but would still have burnt a similar amount of calories.
+
+Marketing Suggestions:
+The data provided was lacklustre so I would recommend acquiring more data to improve the quality of overall analysis.
+A promotional healthy living campaign which would encourage more exercise during the week, perhaps this could be incentivised with rewards for being more active.
+BellaBeat could use reminders built into the device to encourage more movement, similar to reminders which will prompt the user to get active if they have been sedentary for a long period of time.
+
