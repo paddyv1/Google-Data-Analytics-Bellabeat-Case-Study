@@ -9,8 +9,7 @@ _The case study follows the six steps of data analysis process:_
 ###  [Prepare](#2-prepare)
 ###  [Process](#3-process)
 ###  [Analyze](#4-analyze)
-###  [Share](#5-share)
-###  [Act](#6-act)
+###  [Act](#5-act)
 
 ## Scenario
 Bellabeat is a high-tech manufacturer of health-focused products for women. Although it is a small company, it is poised to become a significant competitor in the global smart device market. Currently, it has five focus products: the Bellabeat app, Leaf, Time, Spring, and Bellabeat membership. I have been tasked to analyze the available smart device data to understand how consumers use their smart devices. The insights we discover will then help guide the company's marketing strategy.
@@ -80,13 +79,46 @@ A noticeable trend in the data I also found was that users tended to have fewer 
 
 ![image](https://github.com/user-attachments/assets/0f89fa04-23df-4956-a627-f696ea715dcd)
 
+On Tuesdays and Saturdays, the users were found to take the most steps
+```
+ggplot(data=merged_data, aes(x=Weekday, y=TotalSteps, fill=Weekday))+ 
+geom_bar(stat="identity")+
+ylab("Total Steps")
+```
+![image](https://github.com/user-attachments/assets/829a045d-6bf1-4b64-ae7e-e31659236662)
+
+The more active that you are the more steps you take and the more calories you will burn. By looking at the data we can see that users who are sedentary who take minimal steps are still able to burn anywhere from 1500 to 2500 calories whereas more active users take more steps but will still burn similar calories.
+
+```
+# Interesting find here that some user who are sedentary, takes minimal steps, but are still able to burn over 1500 to 2500 calories
+ggplot(data=daily_activity, aes(x=TotalSteps, y = Calories, color=SedentaryMinutes))+ 
+  geom_point()+ 
+  labs(title="Total Steps vs Calories")+
+  xlab("Total Steps")+
+  stat_smooth(method=lm)+
+  scale_color_gradient(low="red", high="green")
+```
+
+![image](https://github.com/user-attachments/assets/2379fc91-f0c9-4273-83ed-21c9966cc6f9)
+
+Comparing the different active levels to the amount of calories burned it is easy to see that most of the data is on users who burnt 2000 to 3000 calories. The users also spent around 8 to 13 hours being sedentary, 5 hours lightly active and about 2 hours being active or greater.
+
+![image](https://github.com/user-attachments/assets/05cb9d0d-35de-423f-9d31-db17528021cb)
+
+Sleep is another important fitness metric which should be taken into account as good healthy sleep is a key aspect of living a healthy lifestyle. 
+```
+ggplot(data=merged_data, aes(x=TotalMinutesAsleep, y = Calories, color=TotalMinutesAsleep))+ 
+  geom_point()+ 
+  labs(title="Total Minutes Asleep vs Calories")+
+  xlab("Total Minutes Alseep")+
+  stat_smooth(method=lm)+
+  scale_color_gradient(low="orange", high="steelblue")
+```
+
+![image](https://github.com/user-attachments/assets/18bacabc-10da-4c0b-a63a-ea40fa2d9108)
 
 
-
-
-## 5. Share
-
-## 6. Act
+## 5. Act
 From the findings, I conclude:
 - The users of FitBit spend on average around 12 hours a day in sedentary activity levels with 4 hours of lightly active and only around 30 minutes in fairly active.
 - Comparing all the days of the week Saturday tends to be the most active of the seven days whilst Sunday is the least.
